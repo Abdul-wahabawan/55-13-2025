@@ -26,12 +26,12 @@
       <div class="menu-toggle" id="menu-toggle">&#9776;</div>
       <ul class="nav-links" id="nav-links">
         <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Team</a></li>
-        <li><a href="#">Products & Services</a></li>
-        <li><a href="#">News</a></li>
-        <li><a href="#">Contact Us</a></li>
-        <li><button class="navbar-button"><i class="fa-solid fa-headphones"></i>SUPPORT</button></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#teams">Team</a></li>
+        <li><a href="#service">Products & Services</a></li>
+        <li><a href="#News">News</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+        <li><a href="#contact"><button class="navbar-button"><i class="fa-solid fa-headphones"></i>SUPPORT</button></a></li>
       </ul>
     </nav>
   </header>
@@ -49,7 +49,7 @@
             <div class="mainarea-title">PEOPLE FIRST IN EVERY CLICK</div>
             <div class="p1">At the heart of everything we create is a belief in simplicity with substance: easy to use, yet powerful where it counts.</div>
             <div class="p2">We're not just building products — we're building partnerships. Guided by sector insight and real-world feedback, we evolve continually, exploring AI, accessibility, and practical innovation to meet the changing needs of individuals. Our mission is clear: to make a meaningful difference, through technology that grows with you.</div>
-            <button>VIEW SERVICES</button>
+            <a href="#service"><button>VIEW SERVICES</button></a>
           </div>
        
 
@@ -59,7 +59,8 @@
 
         
    <!-- About-Start -->
-    <div class="about-us">
+
+    <div class="about-us" id="about">
       <div class="about-imgs">
         <div class="img1"><img src="assets/aboutimg1.png" alt="About-us"></div>
         <div class="img2">
@@ -124,17 +125,14 @@
           </div>
         </div>
 
-          
         </div>
 
       </div>
     </div>
    <!-- About-End -->
 
-        
-
      <!--Team-Start -->
-     <div class="team">
+     <div class="team" id="teams">
       <div class="team1">
         <div class="team-heading">MEET THE TEAM</div>
         <div class="team-title">REAL PEOPLE. SHARED MISSION. SOLUTION DRIVEN</div>
@@ -175,15 +173,15 @@
      <!--Team-End -->
 
                  <!-- Services-Start -->
-                 <div class="services">
+                 <div class="services" id="service">
                     <h3>OUR SERVICES</h3>
                     <h4>SHARE THE JOY OF ACHIEVING GLORIOUS MOMENTS</h4>
                     <div class="service-boxs">
                         <div class="service-box">
                             <h6><img src="assets/service1.png" alt="" class="service-icon">Web Design</h6>
                         </div>
-                        <div class="service-box">
-                            <h6><img src="assets/service2.png" alt="" class="service-icon">Web Development</h6>
+                        <div class="service-box"id="web-development">
+                            <h6 ><img src="assets/service2.png" alt="" class="service-icon">Web Development</h6>
                         </div>
                         <div class="service-box">
                             <h6><img src="assets/service3.png" alt=""class="service-icon">Digital Marketing</h6>
@@ -224,23 +222,14 @@
                     </div>
                  </div>
                   <!-- Services-End -->
-
-  
-
-
-
-
-
-
-  <script>
-    document.getElementById('menu-toggle').onclick = function () {
-      document.getElementById('nav-links').classList.toggle('active');
-    };
-  </script>
-
+    <script>
+      document.getElementById('menu-toggle').onclick = function () {
+        document.getElementById('nav-links').classList.toggle('active');
+      };
+    </script>
 
   <!-- News-Start -->
-   <div class="News">
+   <div class="News" id="News">
      <div class="news-title">OUR NEWS & BLOGS</div>
      <div class="news-hesding">SHARE THE JOY OF ACHIEVING GLORIOUS MOMENTS</div>
      <div class="news-box">
@@ -285,7 +274,7 @@
      <!-- News-End -->
 
    <!-- Form-Start -->
-   <div class="form-area">
+   <div class="form-area" id="contact">
     <div class="from-box">
       <div class="from-heading">LET'S START</div>
       <p class="from-subtext">
@@ -334,9 +323,7 @@
       
   </div>
   
-   <!-- Form-End -->
-
-
+      <!-- Form-End -->
 
       <!-- Footer-Start -->
 
@@ -358,21 +345,21 @@
         <div class="footer-1">
             <div class="footer-heading">Useful Links</div>
             <ul>
-            <li><a href="#">About Us </a></li>
-            <li><a href="#">Services</a></li>
+            <li><a href="#about">About Us </a></li>
+            <li><a href="#service">Services</a></li>
             <li><a href="#">e-Res</a></li>
-            <li><a href="#"> Contact Us </a></li>
-            <li><a href="#">Privacy Policy </a></li>
+            <li><a href="#contact"> Contact Us </a></li>
+            <li><a href="#contact">Privacy Policy </a></li>
         </ul>
         </div>
         <div class="footer-1">
             <div class="footer-heading">All Services</div>
             <ul>
-            <li><a href="#">All Services </a></li>
-            <li><a href="#">Web Development</a></li>
-            <li><a href="#">Web Design </a></li>
-            <li><a href="#"> Digital Marketing </a></li>
-            <li><a href="#">Digital Marketing  </a></li>
+            <li><a href="#service">All Services </a></li>
+            <li ><a href="#web-development">Web Development</a></li>
+            <li><a href="#service">Web Design </a></li>
+            <li><a href="#service"> Digital Marketing </a></li>
+            <li><a href="#service">Digital Marketing  </a></li>
             <li><a href="#"> Web Hosting  </a></li>
         </ul>
 
